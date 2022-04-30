@@ -5,7 +5,7 @@ class InicioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
+      body: Row(
         children: <Widget>[
           Container(
             color: Colors.blue,
