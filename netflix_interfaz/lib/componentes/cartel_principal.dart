@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 import 'nav_bar_superior.dart';
@@ -61,15 +61,15 @@ class CartelPrincipal extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text('Telenovelas',
-            style: TextStyle(color: Colors.white, fontSize: 10.0)),
+            style: TextStyle(color: Colors.white, fontSize: 12.0)),
         SizedBox(width: 6.0),
         Icon(Icons.fiber_manual_record, color: Colors.red, size: 5.0),
         Text('Suspenso recomendados',
-            style: TextStyle(color: Colors.white, fontSize: 10.0)),
+            style: TextStyle(color: Colors.white, fontSize: 12.0)),
         SizedBox(width: 6.0),
         Icon(Icons.fiber_manual_record, color: Colors.red, size: 5.0),
         Text('Adolescentes',
-            style: TextStyle(color: Colors.white, fontSize: 10.0)),
+            style: TextStyle(color: Colors.white, fontSize: 12.0)),
         SizedBox(width: 6.0),
         Icon(Icons.fiber_manual_record, color: Colors.red, size: 5.0),
       ],
