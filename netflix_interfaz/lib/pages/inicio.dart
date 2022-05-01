@@ -14,19 +14,74 @@ class InicioPage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           CartelPrincipal(),
-          ListaHorizontal('Avances', ItemRedondeado(), 9),
+          ListaHorizontal(
+              'Avances',
+              Row(
+                //Solución a insetar items
+                children: [
+                  ItemRedondeado(),
+                  ItemRedondeado1(),
+                  ItemRedondeado2(),
+                ],
+              ),
+              3),
           SizedBox(
             height: 10.0,
           ),
-          ListaHorizontal('Programas sobre viajes', ItemImg(), 10),
+          ListaHorizontal(
+              'Programas sobre viajes',
+              Row(
+                children: [
+                  ItemImg(),
+                  ItemImg1(),
+                  ItemImg2(),
+                  ItemImg3(),
+                  ItemImg4(),
+                  ItemImg5(),
+                  ItemImg6(),
+                  ItemImg7(),
+                  ItemImg8(),
+                ],
+              ),
+              1),
           SizedBox(
             height: 10.0,
           ),
-          ListaHorizontal('Tendencias', ItemImg(), 10),
+          ListaHorizontal(
+              'Tendencias',
+              Row(
+                children: [
+                  ItemImg3(),
+                  ItemImg4(),
+                  ItemImg8(),
+                  ItemImg1(),
+                  ItemImg2(),
+                  ItemImg5(),
+                  ItemImg6(),
+                  ItemImg7(),
+                  ItemImg(),
+                ],
+              ),
+              1),
           SizedBox(
             height: 10.0,
           ),
-          ListaHorizontal('Mi Lista', ItemImg(), 10),
+          ListaHorizontal(
+              'Mi Lista',
+              Row(
+                children: [
+                  ItemImg8(),
+                  ItemImg7(),
+                  ItemImg6(),
+                  ItemImg5(),
+                  ItemImg4(),
+                  ItemImg3(),
+                  ItemImg2(),
+                  ItemImg1(),
+                  ItemImg(),
+                ],
+              ),
+              1),
           SizedBox(
             height: 20.0,
           ),
@@ -50,7 +105,7 @@ class InicioPage extends StatelessWidget {
             BottomNavigationBarItem(
                 icon: Icon(Icons.more_horiz), label: Text('Más')),
           ],
-        }*/
+        )*/
     );
   }
 
