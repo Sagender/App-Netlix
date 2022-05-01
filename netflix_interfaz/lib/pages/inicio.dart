@@ -87,40 +87,37 @@ class InicioPage extends StatelessWidget {
           ),
         ],
       ),
-
-      /*bottomNavigationBar: BottomNavigationBar(){
-          backgroundColor: Colors.black,
-          selectedItemColor: Colors.white,
-          unselectedItemColor: Colors.white54,
-          type: BottomNavigationBarType.fixed,
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home), String title: Text('Inicio')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search), label: Text('Buscar')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search), label: Text('Próximamente')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.arrow_downward), label: Text('Descargas')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.more_horiz), label: Text('Más')),
-          ],
-        )*/
+      bottomNavigationBar: navInferior(),
     );
   }
 
-  /*BottomNavigationBar navInferior() {
+  BottomNavigationBar navInferior() {
     return BottomNavigationBar(
       backgroundColor: Colors.black,
       selectedItemColor: Colors.white,
       unselectedItemColor: Colors.white54,
       type: BottomNavigationBarType.fixed,
-      items: <BottomNavigationBarItem>[
-        BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Inicio')),
-        BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Inicio')),
+      items: const <BottomNavigationBarItem>[
+        BottomNavigationBarItem(
+          icon: Icon(Icons.home),
+          label: 'Inicio',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.search),
+          label: 'Buscar',
+        ),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.arrow_downward),
+          label: 'Descargas',
+        ),
+        BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: 'More'),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.settings),
+          label: 'Settings',
+        ),
       ],
     );
-  }*/
+  }
 
   Column ListaHorizontal(String titulo, Widget item, int cantidad) {
     return Column(
