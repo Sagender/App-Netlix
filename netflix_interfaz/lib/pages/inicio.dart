@@ -13,25 +13,40 @@ class InicioPage extends StatelessWidget {
       body: Column(
         children: <Widget>[
           CartelPrincipal(),
-          Text(
-            'Avances',
-            style: TextStyle(color: Colors.white),
-          ),
-          Container(
-            height: 110.0,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                ItemRedondeado(),
-                ItemRedondeado(),
-                ItemRedondeado(),
-                ItemRedondeado(),
-                ItemRedondeado(),
-              ],
-            ),
-          ),
+          ListaHorizontal(),
         ],
       ),
+    );
+  }
+
+  Column ListaHorizontal() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 6.0, vertical: 10.0),
+          child: Text(
+            'Avances',
+            style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 20.0),
+          ),
+        ),
+        Container(
+          height: 110.0,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              ItemRedondeado(),
+              ItemRedondeado1(),
+              ItemRedondeado2(),
+              ItemRedondeado(),
+              ItemRedondeado1(),
+            ],
+          ),
+        )
+      ],
     );
   }
 }
