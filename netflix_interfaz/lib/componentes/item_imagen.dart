@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+//Construcción de cada imagen
 class ItemImg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -35,6 +36,7 @@ class ItemImg1 extends StatelessWidget {
 }
 
 class ItemImg2 extends StatelessWidget {
+  //Imagen
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -44,7 +46,7 @@ class ItemImg2 extends StatelessWidget {
           width: 200.0,
           fit: BoxFit.cover,
         ),
-        SizedBox(width: 10.0)
+        SizedBox(width: 10.0),
       ],
     );
   }

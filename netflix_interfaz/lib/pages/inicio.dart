@@ -6,6 +6,7 @@ import 'package:netflix_interfaz/componentes/item_imagen.dart';
 
 import '../componentes/item_redondeado.dart';
 
+//Widget de las imágenes
 class InicioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -91,6 +92,7 @@ class InicioPage extends StatelessWidget {
     );
   }
 
+//Barrra de navegación
   BottomNavigationBar navInferior() {
     return BottomNavigationBar(
       backgroundColor: Colors.black,
